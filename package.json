@@ -1,0 +1,46 @@
+{
+  "name": "oldphillys-blocks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "checkFormat": "prettier --check \"**/*.{js,json,css,scss}\"",
+    "format": "prettier --write \"**/*.{js,json,css,scss}\"",
+    "start": "webpack --mode=development --watch",
+    "build": "webpack --mode=production && gulp bundle"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/blocks": "^6.12.0",
+    "@wordpress/i18n": "^3.9.0",
+    "css-loader": "^3.2.0",
+    "jquery": "^3.4.1",
+    "prettier": "^1.19.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "style-loader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@wordpress/browserslist-config": "^2.6.0",
+    "autoprefixer": "^9.7.1",
+    "babel-loader": "^8.0.6",
+    "browserslist": "^4.7.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.0.1",
+    "husky": "^4.2.3",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ]
+}
